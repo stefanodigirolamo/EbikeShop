@@ -2,7 +2,7 @@ import { styled } from '@mui/material/styles';
 import AppBar from "@mui/material/AppBar";
 
 export const HeaderContainer = styled(AppBar)`
-  height: 7vh;
+  height: 50px;
   display: flex;
   flex-direction: row;
   align-items: center;

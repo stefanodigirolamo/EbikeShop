@@ -9,33 +9,28 @@ interface CardBadgeProps {
 export const CardBadge: FC<CardBadgeProps> = ({ condition }) => {
   const { t } = useTranslation();
 
+  const badgeColor = condition === "nuovo" ? "#ABAECC" : "#FFB000";
+
   return (
-    <>
-      <Box
-        height={34}
-        width={40}
-        sx={{
-          display: "flex",
-          alignItems: "flex-end",
-          backgroundColor:
-            condition === "nuovo" ? "warning.main" : "secondary.light",
-          clipPath: "polygon(0 0, 100% 0%, 100% 100%, 0 65%)",
-        }}
-      />
+    <Box
+      height={34}
+      width={37}
+      sx={{
+        display: "flex",
+        alignItems: "flex-end",
+        justifyContent: "center",
+        background: `linear-gradient(200.13deg, ${badgeColor} 72.01%, rgba(255, 198, 38, 0) 72.37%)`,
+      }}
+    >
       <Typography
         variant="subtitle2"
-        position="absolute"
+        fontSize={10}
         fontWeight="700"
         fontStyle="italic"
         textTransform="uppercase"
-        sx={{
-          zIndex: 1,
-          top: 22,
-          right: 8,
-        }}
       >
         {t(condition)}
       </Typography>
-    </>
+    </Box>
   );
 };

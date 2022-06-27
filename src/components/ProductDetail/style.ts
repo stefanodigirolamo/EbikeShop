@@ -9,7 +9,7 @@ export const ProductDetailContainer = styled(Paper)(({ theme }) => ({
   justifyContent: "space-evenly",
   borderRadius: 0,
   [theme.breakpoints.down("md")]: {
-    height: "60vh"
+    height: "30rem"
   },
 }));
 
