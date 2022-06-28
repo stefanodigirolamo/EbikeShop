@@ -34,7 +34,7 @@ export const CardActions: FC<CardActionsProps> = ({ productTitle }) => {
         componentsProps={{
           typography: {
             fontSize: 14,
-            fontWeight: "bold",
+            fontWeight: 700,
             textTransform: "uppercase",
           },
         }}
@@ -51,7 +51,7 @@ export const CardActions: FC<CardActionsProps> = ({ productTitle }) => {
           bottom: 0,
           right: 0,
           borderRadius: 0,
-          fontWeight: "bold",
+          fontWeight: 700,
           fontStyle: "italic",
           boxShadow: 0,
         }}

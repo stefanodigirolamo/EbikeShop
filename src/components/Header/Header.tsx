@@ -13,13 +13,13 @@ export const Header = () => {
 
   return (
     <HeaderContainer position="fixed">
-      <Typography variant="subtitle1" fontWeight="bold">
-        e-bike shop
+      <Typography variant="subtitle1" fontWeight={700}>
+        ebike-shop
       </Typography>
       <Stack direction="row" spacing={.5} alignItems="center">
-        <Typography variant="subtitle1" fontWeight="bold">it</Typography>
+        <Typography variant="subtitle1" fontWeight={700}>it</Typography>
         <Switch {...label} color="default" onChange={(evt) => handleLangChange(evt)}  />
-        <Typography variant="subtitle1" fontWeight="bold">en</Typography>
+        <Typography variant="subtitle1" fontWeight={700}>en</Typography>
       </Stack>
     </HeaderContainer>
   );

@@ -25,7 +25,7 @@ export const CardBadge: FC<CardBadgeProps> = ({ condition }) => {
       <Typography
         variant="subtitle2"
         fontSize={10}
-        fontWeight="700"
+        fontWeight={700}
         fontStyle="italic"
         textTransform="uppercase"
       >

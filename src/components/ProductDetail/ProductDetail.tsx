@@ -94,7 +94,7 @@ export const ProductDetail: FC<ProductDetailProps> = ({
         color="primary"
         sx={{
           borderRadius: 0,
-          fontWeight: "bold",
+          fontWeight: 700,
           fontStyle: "italic",
         }}
         endIcon={<ShoppingCartIcon />}
